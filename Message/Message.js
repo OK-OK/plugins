@@ -2,7 +2,7 @@
 
 var messageObj = {
 	Message: function(msg, fn) {
-		if(!msg) return
+		if(!msg) return 
 		if(typeof msg === 'object') return this.obj(msg)
 		if(typeof msg !== 'string') return
 		var Obj = new Object()

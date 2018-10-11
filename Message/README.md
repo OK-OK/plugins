@@ -12,8 +12,8 @@ window.Message('message', function() {});
 window.Message({
   message: 'message',
   font: 12,
-  size: 'small'
-  success: function() {},
+  size: 'small',
+  success: function() {}
 });
 ```
 

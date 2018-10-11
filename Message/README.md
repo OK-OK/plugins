@@ -19,8 +19,6 @@ window.Message({
 
 # API
 
-## Targets
-
 The `message` property defines the `String` or JS `Object`s to Message.
 
 | `size` | `{'small', 'default', 'large'}`

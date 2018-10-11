@@ -43,6 +43,7 @@ var messageObj = {
 		node.innerHTML = obj.message
 		if(typeof obj.font === 'number') node.style.fontSize = obj.font + 'px'
 		if(obj.size && obj.size === 'small') node.style.padding = '5px 20px'
+		if(obj.size && obj.size === 'default') node.style.padding = '8px 32px'
 		if(obj.size && obj.size === 'large') node.style.padding = '10px 40px'
 	},
 }

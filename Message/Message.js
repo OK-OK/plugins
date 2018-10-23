@@ -20,7 +20,7 @@ var messageObj = {
 		this.addStyle(node, obj)
 		document.body.appendChild(node)
 		setTimeout(function (){
-			node.style.top = '10px'
+			node.style.top = '15px'
 			setTimeout(function (){
 				node.style.top = '-80px'
 				node.addEventListener('transitionend', function () {
@@ -31,20 +31,22 @@ var messageObj = {
 		}, 100)
 	},
 	addStyle: function(node, obj) {
+		node.style.transform = 'translate3d(0,0,0)'
 		node.style.transition = 'all 0.8s linear'
 		node.style.position = 'fixed'
 		node.style.top = '-80px'
 		node.style.left = '50%'
-		node.style.transform = 'translateX(-50%)'
 		node.style.background = 'white'
-		node.style.padding = '8px 32px'
+		node.style.padding = '3vw 6vw'
 		node.style.borderRadius = '5px'
 		node.style.fontSize = '13px'
+		node.style.zIndex = 100
+		node.style.transform = 'translateX(-50%)'
 		node.innerHTML = obj.message
 		if(typeof obj.font === 'number') node.style.fontSize = obj.font + 'px'
-		if(obj.size && obj.size === 'small') node.style.padding = '5px 20px'
-		if(obj.size && obj.size === 'default') node.style.padding = '8px 32px'
-		if(obj.size && obj.size === 'large') node.style.padding = '10px 40px'
+		if(obj.size && obj.size === 'small') node.style.padding = '2vw 3vw'
+		if(obj.size && obj.size === 'default') node.style.padding = '3vw 6vw'
+		if(obj.size && obj.size === 'large') node.style.padding = '4vw 7vw'
 	},
 }
 

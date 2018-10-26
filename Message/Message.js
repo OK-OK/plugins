@@ -1,6 +1,7 @@
 'use strict';
 
 var messageObj = {
+	DOing: false,
 	Message: function(msg, fn) {
 		if(!msg) return 
 		if(typeof msg === 'object') return this.obj(msg)
@@ -15,6 +16,9 @@ var messageObj = {
 		this.render.call(this, obj)
 	},
 	render: function(option) {
+		if(this.DOing) return
+		this.DOing = true
+		var self = this
 		var node = document.createElement('p')
 		var obj = option
 		this.addStyle(node, obj)
@@ -25,6 +29,7 @@ var messageObj = {
 				node.style.top = '-80px'
 				node.addEventListener('transitionend', function () {
 					document.body.removeChild(node)
+					self.DOing = false
 					if(typeof obj.success === 'function') obj.success()
 				})
 			}, 2500)

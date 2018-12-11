@@ -23,7 +23,7 @@ Then stop:
 
 ```javascript
 
-window.stopLoading(time); 延时time毫秒执行
+window.stopLoading(time); 	延时time毫秒后执行
 
 ```
 

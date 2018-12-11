@@ -31,7 +31,7 @@ window.stopLoading(time); 	延时time毫秒后执行
 
 The `options` property defines the JS `Object`.
 
-| `opacity` | `default: 0`
-| `backgroundColor` | `default: white`
-| `width` | `default: 30px`
+| `opacity` | `default: 0`  
+| `backgroundColor` | `default: white`  
+| `width` | `default: 30px`  
 | `height` | `default: 30px`

@@ -12,9 +12,9 @@ Then start:
 window.Loading('xxx.png', options);
 
 window.Loading('xxx.png', {
-	width: '60px',						icon宽度
-	height: '60px',						icon高度
-	opacity: 1,								背景透明度
+	width: '60px',icon宽度
+	height: '60px',	icon高度
+	opacity: 1,	背景透明度
 	backgroundColor: 'red',		背景颜色
 });
 ```

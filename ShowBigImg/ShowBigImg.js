@@ -1,11 +1,11 @@
 (function () {
-	function showBigImg (url) {
-		if(!(this instanceof showBigImg)) return new showBigImg(url)
+	function ShowBigImg (url) {
+		if(!(this instanceof ShowBigImg)) return new ShowBigImg(url)
 		this.url = url
 		this.doing = false
 		this.init()
 	}
-	showBigImg.prototype = {
+	ShowBigImg.prototype = {
 		init: function () {
 			if(!this.url) return
 			this.initUrl(this)
@@ -110,5 +110,5 @@
 		}
 	}
 	
-	window.showBigImg = showBigImg
+	window.ShowBigImg = ShowBigImg
 })()
